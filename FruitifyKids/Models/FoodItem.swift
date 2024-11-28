@@ -1,8 +1,10 @@
-//
-//  FoodItem.swift
-//  FruitifyKids
-//
-//  Created by Gimhan Rajapaksha on 2024-11-28.
-//
-
 import Foundation
+import FirebaseFirestore
+
+// Food Item Model
+struct FoodItem: Identifiable, Codable {
+    var id: String = UUID().uuidString
+    var name: String
+    var imageUrl: String
+    var description: String
+}

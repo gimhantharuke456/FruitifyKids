@@ -1,14 +1,12 @@
-//
-//  FruitifyKidsApp.swift
-//  FruitifyKids
-//
-//  Created by Gimhan Rajapaksha on 2024-11-28.
-//
-
 import SwiftUI
-
+import FirebaseCore
 @main
 struct FruitifyKidsApp: App {
+    
+    init(){
+        FirebaseApp.configure()
+    }
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
